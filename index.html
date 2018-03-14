@@ -15,23 +15,31 @@
 <body>
     <div class="container">
         <header class="col-md-12 float-right">
-            <h1 class="text-right">Star Wars RPG!</h1>
+            <h1 id="title" class="text-right">Star Wars RPG!</h1>
         </header>
         <br>
         <div class="row">
             <div class="your-char col-md-8">
                 <div class="col-md-12 characters">
-                    <div id="obiWan" class="col-md-3 character img-responsive">
-                        <img class="player-icon" src="./assets/images/obiwan.jpg" alt="Obi Wan Kanobi">
+                    <div class="col-md-3 character img-responsive">
+                        <p>Obi Wan Kenobi</p>
+                        <img id="obiWan" class="player-icon" src="./assets/images/obiwan.jpg" alt="Obi Wan Kanobi">
+                        <p>HP: <span id="obiHP">120</span></p>
                     </div>
-                    <div id="lukeSky" class="col-md-3 character img-responsive">
-                        <img class="player-icon" src="./assets/images/luke.jpg" alt="Luke Skylwalker">
+                    <div class="col-md-3 character img-responsive">
+                        <p>Luke Skywalker</p>
+                        <img id="lukeSky" class="player-icon" src="./assets/images/luke.jpg" alt="Luke Skylwalker">
+                        <p>HP: <span id="lukeHP">100</span></p>
                     </div>
-                    <div id="darthSid" class="col-md-3 character img-responsive">
-                        <img class="player-icon" src="./assets/images/Darth_Sidious.jpg" alt="Darth Sidious">
+                    <div class="col-md-3 character img-responsive">
+                        <p>Darth Sideous</p>
+                        <img id="darthSid" class="player-icon" src="./assets/images/Darth_Sidious.jpg" alt="Darth Sidious">
+                        <p>HP: <span id="sidHP">150</span></p>
                     </div>
-                    <div id="darthMaul" class="col-md-3 character img-responsive">
-                        <img class="player-icon" src="./assets/images/Darth_Maul.jpg" alt="Darth Maul">
+                    <div class="col-md-3 character img-responsive">
+                        <p>Darth Maul</p>
+                        <img id="darthMaul" class="player-icon" src="./assets/images/Darth_Maul.jpg" alt="Darth Maul">
+                        <p>HP: <span id="maulHP">180</span></p>
                     </div>
                 </div>
 
@@ -51,15 +59,18 @@
         <br>
 
         <div class="row">
-            <div class="fightSec col-md-4">
-                <button class="btn">Attack</button>
+            <div class="col-md-12">
+                <div class="fightSec col-md-4">
+                    <button id="attack" class="btn">Attack</button>
+                </div>
             </div>
         </div>
 
         <br>
 
         <div class="row">
-            <div class="defenders col-md-4">
+            <div class="col-md-12">
+                <div class="defenders col-md-12"></div>
                 <h2>Defender</h2>
             </div>
         </div>
@@ -67,8 +78,8 @@
         <br>
 
         <div class="row">
-            <div class="info">
-
+            <div class="info col-md-12">
+                <p id="instructions"></p>
             </div>
         </div>
     </div>

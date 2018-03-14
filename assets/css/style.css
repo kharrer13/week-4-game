@@ -3,13 +3,10 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    color: red;
 }
 
 .player-icon {
     /* width: 200px; */
     height: 100px;
-}
-
-.your-char {
-    
 }
