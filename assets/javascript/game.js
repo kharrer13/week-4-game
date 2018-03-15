@@ -1,3 +1,7 @@
+// TO DO
+// 1. Work on reset function
+
+
 // Declare the character objects
 
 var charList = {
@@ -67,6 +71,10 @@ function reset() {
     fighterSelect = false;
     defenderSelect = false;
     dead =  false;
+    multiplier = 1;
+    $('.reset').removeClass('enemy').removeClass('your-character').removeClass('defender').addClass('character');
+    $('.characters').prepend($('character'));
+    $('#instructions').html('');
 }
 
 // Main body of game
@@ -132,5 +140,9 @@ $(document).ready(function () {
         } else {
             $('#instructions').html('Select your Character and a Defender to attack');
         }
+    })
+
+    $('#reset').click(function(){
+        reset();
     })
 });
